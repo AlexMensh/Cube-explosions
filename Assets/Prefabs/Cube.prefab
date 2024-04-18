@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 8184178580048782224}
   - component: {fileID: 931432334217462243}
   - component: {fileID: 3802703010232625302}
+  - component: {fileID: 4725572539946255845}
+  - component: {fileID: 5446984180722980945}
+  - component: {fileID: 88395856340655566}
   - component: {fileID: 2005887993984206144}
   m_Layer: 0
   m_Name: Cube
@@ -31,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 7, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d1a7c4b50b512044aaf532714e344488, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -134,6 +137,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &4725572539946255845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3675167692390640708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d9d846cfd66da540b0a1a8b41bdd9a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5446984180722980945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3675167692390640708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d3ee4db2a5d6894997aa538d792c2ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &88395856340655566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3675167692390640708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecbd8044542bee04f82473e4b5f7abf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cubePrefab: {fileID: 2005887993984206144}
 --- !u!114 &2005887993984206144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78130ceccf7e7454fab26cc0694d3c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explosionRadius: 10
-  _explosionForce: 500
+  _explosionRadius: 100
+  _explosionForce: 1000
   _splitChance: 2
-  _cubePrefab: {fileID: 2005887993984206144}
