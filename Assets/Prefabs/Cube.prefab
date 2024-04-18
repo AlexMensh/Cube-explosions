@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78130ceccf7e7454fab26cc0694d3c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explosionRadius: 300
-  _explosionForce: 700
-  _splitChance: 1
-  cubePrefab: {fileID: 3675167692390640708}
+  _explosionRadius: 10
+  _explosionForce: 500
+  _splitChance: 2
+  _cubePrefab: {fileID: 2005887993984206144}
