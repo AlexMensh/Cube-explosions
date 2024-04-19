@@ -17,7 +17,7 @@ public class CubeExploder : MonoBehaviour
     private List<Rigidbody> GetExplodingObjects(float explosionRadius)
     {
         return Physics.OverlapSphere(transform.position, explosionRadius).Select(hit => hit.attachedRigidbody)
-                                                                         .Where(rb => rb != null)
+                                                                         .Where(rigidbody => rigidbody != null)
                                                                          .ToList();
     }
 }
